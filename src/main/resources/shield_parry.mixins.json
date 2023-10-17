@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.hyper_pigeon.shield_parry.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EntityMixin",
+    "MinecraftServerMixin",
+    "PlayerEntityMixin",
+    "PlayerEntityModelMixin",
+    "ProjectileEntityMixin",
+    "ShieldItemMixin"
+  ],
+  "client": [
+    "ClientPlayerEntityMixin",
+    "MinecraftClientMixin",
+    "MouseMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

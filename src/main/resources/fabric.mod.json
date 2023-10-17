@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "shield_parry",
+  "version": "${version}",
+  "name": "ShieldParry",
+  "description": "An Ultrakill-inspired mod that adds an enchantment that allows players to parry projectiles with their shield. ",
+  "authors": [
+    "CyborgPigeon"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/shield_parry/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.hyper_pigeon.shield_parry.client.ShieldParryClient"
+    ],
+    "main": [
+      "net.hyper_pigeon.shield_parry.ShieldParry"
+    ]
+  },
+  "mixins": [
+    "shield_parry.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
